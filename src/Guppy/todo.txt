@@ -1,0 +1,112 @@
+﻿TODO: MainWindow class that sets decoration flags accordingly
+TODO: tabs seems not to layout invisible tabs correclty (winforms) visible when switching tabs
+TODO: more advance children traversal system and remove feature etc.
+TODO: check that all blockable events are blockable
+TODO: make On... event methods protected and call them internally through a trigger... function
+TODO: Ev. ändra tillbaka till strängretur för fönster
+TODO: Dispose på en dialog som visas hänger eventloopen i winforms (funkar i gtk)
+
+DONE: Maximize and minimize functions of windows
+DONE: Make 'uninitialized' size of controls be (-1,-1) instead of (0,0)
+DONE: test uniform width/height after minor redraw with immutable size2i
+DONE: Make Size2i immutable
+DONE: DevTest image not working in gtk driver??
+DONE: Maybe gtk image should be a gdk image so that it's not an actual control? (used pixbuf)
+DONE: Image for label (slide)
+DONE: Make it easier to get an image for a control driver (see buttons image implementations...)
+DONE: Make smarter window initial sizing (so that manual size can be set)
+DONE: manual positioning of windows and some more work on positioning. Show() for same window in gtk twice malplaces the window
+DONE: troubles catching return keydown event in gtk driver
+DONE: Rename 'Value' properties to more common names (MAYBE!)
+DONE: Maybe rename Remove to RemoveIndex in listbox/combobox/combobox entry??
+DONE: check that wanted_index and SelectedObject.set works in ListBox, Choice and ChoiceEdit
+	also that selected index really sets to _no item_ for the above
+DONE: virtualize a lot of functions in the base classes
+DONE: workout how Append works with \n vs. \r\n in win+gtk
+DONE: when a windows forms form is shown as sub form non modally, the app locks up when closed (mainloop never terminates) (cant reproduce)
+DONE: a form is not centered on parent first time its shown in windows forms
+DONE: ProcessMessages (process message stuff, needs blocking option)
+DONE: Implement missing keys and util function for shortcut names
+DONE: general append function (follow same pattern as detach)
+DONE: General update(refresh) function for all composite widgets.
+DONE: RawKeyUp event etc.
+DONE: KeyChar function
+DONE: Keyboard processing for focused controls
+DONE: Width and height property for all widgets if not already exist
+DONE: fixa klart keyboard grejjer i winforms driver
+DONE: AcceptsTabs property in memos
+
+*****Events för alla kontroller
+EvEnter (när kontrollen får focus)
+EvLeave (när kontrollen tappar focus)
+EvMouseEnter (när musen kommer över kontrollen)
+EvMouseLeave (när musen lämnar kontrollen)
+EvButtonDown (musknapp ner på kontrollen)
+EvButtonUp	 (musknapp upp på kontrollen)
+
+
+**För alla kontroller:
+Width,Height,Cursor,Handle,Focused,Dispose
+
+
+*****Button
+
+***Choice
+
+***ChoiceEdit
+Append
+Count
+Remove
+Clear
+DropDownCount
+EvChanged
+Text
+
+
+***Edit
+-done
+
+***Frame
+-Done
+
+***Label
+***Image label
+***ListBox
+***Memo
+***MenuItem
+EvShowing
+
+
+***PopupMenu
+
+
+***ProgressBar
+
+
+***RadioButton
+
+
+***Splitter
+
+
+***Tabs
+
+
+***TabPage
+
+***Toggle
+Image (fix in gtk)
+
+***Window
+Menu	(ett Menu objekt som blir en mainmenu)
+
+
+
+
+
+
+
+
+
+
+

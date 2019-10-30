@@ -1,0 +1,47 @@
+Primitiver som fins i guppy redan:
+
+Window
+Button
+Choice
+Edit
+Fill
+Frame (=groupbox)
+Label
+Separator
+TableLayout
+Toggle (kryssruta/toggleknapp)
+Image
+ListBox (kanske skall vara samma kontroll som combobox!?) (ej gtk)
+Memo (multiline edit)
+Splitter (kontroll med 2 'childs' som kan ändra storlek)
+ProgressBar
+Valuator (=slider)
+Tabs (flikar / wizard)
+Popup meny
+
+Eventuella primitiver till första release:
+
+Canvas (används som rityta för egna kontroller eller viewport för scribble etc)
+GLCanvas (Som canvas men opengl)
+Tree (jobbig)
+Grid (som kan användas som lista etc)
+Dial (=rullhjul, kräver Canvas då det är en 'custom' control)
+Editable combobox
+GetString interface
+Registry/data saving
+Font
+
+Andra primitiver framöver:
+Mainmenu
+Painter (för att rita saker på en canvas, jfr. Graphics)
+
+
+Eventuella andra saker:
+Image library (standard bilder)
+
+Eventuella inbyggda dialoger i första release
+FileDialog (preview i första release?)
+DirectoryDialog
+ColorDialog
+FontDialog (mycket tveksam)
+MessageDialog

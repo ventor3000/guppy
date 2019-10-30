@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7778A200-CAD0-4FEF-9605-E4CEE28E1E9C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GuppyGUI</RootNamespace>
+    <AssemblyName>Guppy</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\exe\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\exe\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="atk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <Reference Include="gdk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <Reference Include="glib-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <Reference Include="gtk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <Reference Include="pango-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <Reference Include="System" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbstractDriver\Driver.cs" />
+    <Compile Include="AbstractDriver\DriverButton.cs" />
+    <Compile Include="AbstractDriver\DriverChoice.cs" />
+    <Compile Include="AbstractDriver\DriverChoiceEdit.cs" />
+    <Compile Include="AbstractDriver\DriverCompositeWidget.cs" />
+    <Compile Include="AbstractDriver\DriverEdit.cs" />
+    <Compile Include="AbstractDriver\DriverFrame.cs" />
+    <Compile Include="AbstractDriver\DriverImage.cs" />
+    <Compile Include="AbstractDriver\DriverLabel.cs" />
+    <Compile Include="AbstractDriver\DriverListBox.cs" />
+    <Compile Include="AbstractDriver\DriverMemo.cs" />
+    <Compile Include="AbstractDriver\DriverMenuItem.cs" />
+    <Compile Include="AbstractDriver\DriverPopupMenu.cs" />
+    <Compile Include="AbstractDriver\DriverProgressBar.cs" />
+    <Compile Include="AbstractDriver\DriverRadioButton.cs" />
+    <Compile Include="AbstractDriver\DriverSeparator.cs" />
+    <Compile Include="AbstractDriver\DriverImageLabel.cs" />
+    <Compile Include="AbstractDriver\DriverSplitter.cs" />
+    <Compile Include="AbstractDriver\DriverTabs.cs" />
+    <Compile Include="AbstractDriver\DriverToggle.cs" />
+    <Compile Include="AbstractDriver\DriverValuator.cs" />
+    <Compile Include="AbstractDriver\DriverWidget.cs" />
+    <Compile Include="AbstractDriver\DriverWindow.cs" />
+    <Compile Include="BasicDataTypes\Margin.cs" />
+    <Compile Include="BasicDataTypes\Point2i.cs" />
+    <Compile Include="BasicDataTypes\Size2i.cs" />
+    <Compile Include="Button.cs" />
+    <Compile Include="Choice.cs" />
+    <Compile Include="ChoiceEdit.cs" />
+    <Compile Include="CompositeWidget.cs" />
+    <Compile Include="Edit.cs" />
+    <Compile Include="EventData.cs" />
+    <Compile Include="Fill.cs" />
+    <Compile Include="Frame.cs" />
+    <Compile Include="GtkSharp\GtkSharpButton.cs" />
+    <Compile Include="GtkSharp\GtkSharpChoice.cs" />
+    <Compile Include="GtkSharp\GtkSharpDriver.cs" />
+    <Compile Include="GtkSharp\GtkSharpEdit.cs" />
+    <Compile Include="GtkSharp\GtkSharpFrame.cs" />
+    <Compile Include="GtkSharp\GtkSharpImage.cs" />
+    <Compile Include="GtkSharp\GtkSharpKeys.cs" />
+    <Compile Include="GtkSharp\GtkSharpLabel.cs" />
+    <Compile Include="GtkSharp\GtkSharpMemo.cs" />
+    <Compile Include="GtkSharp\GtkSharpSeparator.cs" />
+    <Compile Include="GtkSharp\GtkSharpImageLabel.cs" />
+    <Compile Include="GtkSharp\GtkSharpToggle.cs" />
+    <Compile Include="GtkSharp\GtkSharpWindow.cs" />
+    <Compile Include="Guppy.cs" />
+    <Compile Include="Image.cs" />
+    <Compile Include="Keys.cs" />
+    <Compile Include="Label.cs" />
+    <Compile Include="ListBox.cs" />
+    <Compile Include="Memo.cs" />
+    <Compile Include="MenuItem.cs" />
+    <Compile Include="PopupMenu.cs" />
+    <Compile Include="ProgressBar.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RadioButton.cs" />
+    <Compile Include="Separator.cs" />
+    <Compile Include="ImageLabel.cs" />
+    <Compile Include="Splitter.cs" />
+    <Compile Include="SplitterPanel.cs" />
+    <Compile Include="TableLayout.cs" />
+    <Compile Include="Tabs.cs" />
+    <Compile Include="Toggle.cs" />
+    <Compile Include="Util\ButtonDialog.cs" />
+    <Compile Include="Util\Dialog.cs" />
+    <Compile Include="Valuator.cs" />
+    <Compile Include="Widget.cs" />
+    <Compile Include="ChildCollection.cs" />
+    <Compile Include="Window.cs" />
+    <Compile Include="WindowsSpecific\WinAPIFunctions.cs" />
+    <Compile Include="WinForms\WinFormsUtils.cs" />
+    <Compile Include="WinForms\WinFormsButton.cs">
+    </Compile>
+    <Compile Include="WinForms\WinFormsChoice.cs" />
+    <Compile Include="WinForms\WinFormsChoiceEdit.cs" />
+    <Compile Include="WinForms\WinFormsDriver.cs" />
+    <Compile Include="WinForms\WinFormsEdit.cs">
+    </Compile>
+    <Compile Include="WinForms\WinFormsFrame.cs" />
+    <Compile Include="WinForms\WinFormsImage.cs" />
+    <Compile Include="WinForms\WinFormsKeys.cs" />
+    <Compile Include="WinForms\WinFormsLabel.cs" />
+    <Compile Include="WinForms\WinFormsListBox.cs" />
+    <Compile Include="WinForms\WinFormsMemo.cs" />
+    <Compile Include="WinForms\WinFormsMenuItem.cs" />
+    <Compile Include="WinForms\WinFormsPanel.cs" />
+    <Compile Include="WinForms\WinFormsPopupMenu.cs" />
+    <Compile Include="WinForms\WinFormsProgressBar.cs" />
+    <Compile Include="WinForms\WinFormsRadioButton.cs" />
+    <Compile Include="WinForms\WinFormsSeparator.cs" />
+    <Compile Include="WinForms\WinFormsImageLabel.cs" />
+    <Compile Include="WinForms\WinFormsSplitter.cs" />
+    <Compile Include="WinForms\WinFormsTabs.cs" />
+    <Compile Include="WinForms\WinFormsToggle.cs">
+    </Compile>
+    <Compile Include="WinForms\WinFormsValuator.cs" />
+    <Compile Include="WinForms\WinFormsWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="guppyicon.png" />
+    <Content Include="possible_features.txt" />
+    <Content Include="todo.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

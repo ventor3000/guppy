@@ -1,0 +1,28 @@
+Keyboard system:
+
+When getting a key event, an integer Key is in the Event structure.
+This integer has a specific format: 
+
+the lower 16 bits (KeyCode&0xffff) is zero if this is not a printable keystroke. 
+Otherwise, it represents the unicode of the _unmodified_ key on keyboard (for example
+1 on an english keyboard even if shift+1 is pressed for excalmation mark)
+
+The lower 20 bits represent all available keystrokes, even thoose not printable.
+The supported unprintable keys is defined in class KeyCodes as constant integers.
+
+In addition to this, the following combination of flags can be ored in the keycode in
+any combination:
+0x100000  => shift is pressed
+0x200000  => control is pressed
+0x400000  => alt is pressed
+
+
+Example: check if control+a is pressed:
+if(Event.Key=='A'+KeyCode.Control) {char ch=(char)(Event.Key&0xffff) /*ch is now the character of the key*/}
+
+Example: check if this is a typable key:
+if( (Event.Key&0xffff)!=0) { /*do something with the typable character*/}
+
+	
+
+
